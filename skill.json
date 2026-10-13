@@ -1,0 +1,25 @@
+{
+  "name": "genpark-agentic-flight-delay-eu261-compensation-claimant-skill",
+  "version": "1.0.0",
+  "description": "Automated Flight Delay & Cancellation EU261 / UK261 Regulatory Compensation Claimant. Computes flight route Great-Circle distances via Haversine geometry, applies statutory compensation tiers (up to EUR 600), screens extraordinary circumstance defenses, and drafts legally binding claim demand notices for airline passenger relations.",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.llinkedin.com/company/92955550",
+  "tools": [
+    {
+      "name": "generate_claim",
+      "description": "Calculate and generate EU261 flight delay compensation claim demand.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flight_info": {
+            "type": "object",
+            "description": "Flight disruption payload including airports, carrier, delay hours, and disruption cause."
+          }
+        },
+        "required": [
+          "flight_info"
+        ]
+      }
+    }
+  ]
+}
